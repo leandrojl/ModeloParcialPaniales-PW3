@@ -14,23 +14,30 @@
         @ViewBag.Message
     </div>
 }
-<form asp-controller="Calculadora" asp-action="Sumar">
+<form asp-controller="Panial" asp-action="CalcularPanial">
     <div asp-validation-summary="All" class="text-danger"></div>
 
     <div class="form-group">
-        <label asp-for="numero1" class="control-label"></label>
-        <input asp-for="numero1" class="form-control" />
-        <span asp-validation-for="numero1" class="text-danger"></span>
+        <label asp-for="nombreDelNinio" class="control-label"></label>
+        <input asp-for="nombreDelNinio" class="form-control" />
+        <span asp-validation-for="nombreDelNinio" class="text-danger"></span>
 
     </div>
     <div class="form-group">
-        <label asp-for="numero2" class="control-label"></label>
-        <input asp-for="numero2" class="form-control" />
+        <label asp-for="pesoDelNinio" class="control-label"></label>
+        <input asp-for="pesoDelNinio" class="form-control" />
 
-        <span asp-validation-for="numero2" class="text-danger"></span>
+        <span asp-validation-for="pesoDelNinio" class="text-danger"></span>
 
     </div>
-    <input type="hidden" asp-for="operador" value="+" />
 
-    <button type="submit" class="btn btn-primary">SUMAR!</button>
+    <div class="form-group">
+        <label asp-for="edadDelNinio" class="control-label"></label>
+        <input asp-for="edadDelNinio" class="form-control" />
+        <span asp-validation-for="edadDelNinio" class="text-danger"></span>
+
+    </div>
+    
+
+    <button type="submit" class="btn btn-primary">Calcular</button>
 </form>

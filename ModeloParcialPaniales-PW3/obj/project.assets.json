@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/MVC.Entidades.dll": {}
         }
+      },
+      "MVC.Servicios/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MVC.Entidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MVC.Servicios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MVC.Servicios.dll": {}
+        }
       }
     }
   },
@@ -19,11 +32,17 @@
       "type": "project",
       "path": "../MVC.Entidades/MVC.Entidades.csproj",
       "msbuildProject": "../MVC.Entidades/MVC.Entidades.csproj"
+    },
+    "MVC.Servicios/1.0.0": {
+      "type": "project",
+      "path": "../MVC.Servicios/MVC.Servicios.csproj",
+      "msbuildProject": "../MVC.Servicios/MVC.Servicios.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "MVC.Entidades >= 1.0.0"
+      "MVC.Entidades >= 1.0.0",
+      "MVC.Servicios >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -60,6 +79,9 @@
           "projectReferences": {
             "C:\\Users\\Usuario\\source\\repos\\ModeloParcialPaniales-PW3\\MVC.Entidades\\MVC.Entidades.csproj": {
               "projectPath": "C:\\Users\\Usuario\\source\\repos\\ModeloParcialPaniales-PW3\\MVC.Entidades\\MVC.Entidades.csproj"
+            },
+            "C:\\Users\\Usuario\\source\\repos\\ModeloParcialPaniales-PW3\\MVC.Servicios\\MVC.Servicios.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\source\\repos\\ModeloParcialPaniales-PW3\\MVC.Servicios\\MVC.Servicios.csproj"
             }
           }
         }

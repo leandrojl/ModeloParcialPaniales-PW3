@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ModeloParcialPaniales-PW3/1.0.0": {
+        "dependencies": {
+          "MVC.Entidades": "1.0.0",
+          "MVC.Servicios": "1.0.0"
+        },
+        "runtime": {
+          "ModeloParcialPaniales-PW3.dll": {}
+        }
+      },
+      "MVC.Entidades/1.0.0": {
+        "runtime": {
+          "MVC.Entidades.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MVC.Servicios/1.0.0": {
+        "dependencies": {
+          "MVC.Entidades": "1.0.0"
+        },
+        "runtime": {
+          "MVC.Servicios.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ModeloParcialPaniales-PW3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MVC.Entidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MVC.Servicios/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

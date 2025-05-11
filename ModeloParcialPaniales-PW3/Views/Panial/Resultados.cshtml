@@ -1,20 +1,44 @@
-﻿@{
-    ViewData["Title"] = "Resultados";
-}
+﻿@model List<MVC.Entidades.Panial>
 
+@{
+    ViewData["Title"] = "Lista de Resultados";
+}
 <div class="text-center">
-    <h1 class="display-4">Bienvenido al sitio</h1>
+    <h1 class="display-4">@ViewData["Title"]</h1>
     <div class="container-fluid">
-        
+
         <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
             <ul class="navbar-nav flex-grow-1">
                 <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="Index">Resultados</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Principal" asp-action="Inicio">Volver al inicio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="Privacy">Calcular el tamanio de panial para ninio</a>
-                </li>
+          
             </ul>
         </div>
+    </div>
+    <div class="container-fluid">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Peso</th>
+                    <th>=</th>
+                    <th>Tamaño pañal</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var panial in Model)
+                {
+                    <tr>
+                        <td>@panial.nombreDelNinio</td>
+                        <td>@panial.edadDelNinio</td>
+                        <td>@panial.pesoDelNinio</td>
+                        <td>=</td>
+                        <td>@panial.tamanio</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 </div>

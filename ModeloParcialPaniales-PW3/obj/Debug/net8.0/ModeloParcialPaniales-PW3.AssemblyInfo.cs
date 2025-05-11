@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ModeloParcialPaniales-PW3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86d82d9c3819e2f6ebc735d0387e88d8e3decd07")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModeloParcialPaniales-PW3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModeloParcialPaniales-PW3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
